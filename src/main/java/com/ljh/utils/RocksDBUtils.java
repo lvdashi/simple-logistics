@@ -1,5 +1,6 @@
 package com.ljh.utils;
 
+import cn.hutool.core.io.FileUtil;
 import cn.hutool.system.SystemUtil;
 import com.ljh.bean.LogisticsCompany;
 import com.ljh.bean.LogisticsInfo;
@@ -39,11 +40,12 @@ public class RocksDBUtils {
      */
     private void openDB() {
         String dbFile ="";
-        if(SystemUtil.getOsInfo().isMac()){
-            dbFile=System.getProperty("user.dir")+"/db/logistics.db";
-        }
         if(SystemUtil.getOsInfo().isWindows()){
+            FileUtil.mkdir(System.getProperty("user.dir")+"\\db");
             dbFile=System.getProperty("user.dir")+"\\db\\logistics.db";
+        }else{
+            FileUtil.mkdir(System.getProperty("user.dir")+"/db");
+            dbFile=System.getProperty("user.dir")+"/db/logistics.db";
         }
         try {
             db = RocksDB.open(dbFile);
