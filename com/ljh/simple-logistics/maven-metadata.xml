@@ -3,10 +3,11 @@
   <groupId>com.ljh</groupId>
   <artifactId>simple-logistics</artifactId>
   <versioning>
-    <release>1.1.RELEASE</release>
+    <release>1.1.DEV</release>
     <versions>
       <version>1.1.RELEASE</version>
+      <version>1.1.DEV</version>
     </versions>
-    <lastUpdated>20220524091124</lastUpdated>
+    <lastUpdated>20220524091429</lastUpdated>
   </versioning>
 </metadata>
