@@ -27,7 +27,7 @@ springboot快速集成 聚合数据查询物流服务
     <repositories>
         <repository>
             <id>maven-repository-main</id>
-            <url>https://raw.github.com/lvdashi/simple-logistics/main/</url>
+            <url>https://raw.github.com/lvdashi/simple-logistics/pom/</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
